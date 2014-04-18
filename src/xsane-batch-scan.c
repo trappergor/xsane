@@ -680,15 +680,12 @@ static GtkWidget *xsane_batch_scan_create_list_entry(Batch_Scan_Parameters *para
  GtkWidget *list_item;
  GtkWidget *hbox;
  int size = 120;
- char *data;
 
   list_item = gtk_list_item_new();
 
   hbox = gtk_hbox_new(FALSE, 10);
   gtk_container_add(GTK_CONTAINER(list_item), hbox);
   gtk_widget_show(hbox);
-
-  data = calloc(size, size);
 
   parameters->gtk_preview = gtk_preview_new(GTK_PREVIEW_COLOR);
   gtk_preview_size(GTK_PREVIEW(parameters->gtk_preview), size, size);
