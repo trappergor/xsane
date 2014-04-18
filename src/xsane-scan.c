@@ -1591,6 +1591,7 @@ void xsane_scan_done(SANE_Status status)
 
     DBG(DBG_info, "ADF mode end of scan: increment page counter and restart scan\n");
     xsane.adf_page_counter += 1;
+    sane_control_device(xsane.dev, 0, NULL); /* next page or slide */
     gtk_timeout_add(100, (GtkFunction)xsane_scan_dialog, NULL); /* wait 100ms then call xsane_scan_dialog(); */
   }
   else if ( ( (status == SANE_STATUS_GOOD) || (status == SANE_STATUS_EOF) ) && (xsane.batch_loop  == BATCH_MODE_LOOP) )
