@@ -1,9 +1,10 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=XSane - Scanning
+Name=XSane
+GenericName=Scanning
 Comment=Acquire images from a scanner
 Exec=xsane
 Icon=xsane
 Terminal=false
 Type=Application
-Categories=Application;Graphics
+Categories=Graphics;Scanning;
