@@ -5815,19 +5815,7 @@ static int xsane_init(int argc, char **argv)
     xsane.xsane_rc_set_filename = strdup("xsane"); /* ".rc" is appended later */
   }
 
-
-  if (xsane_pref_restore()) /* restore preferences, returns TRUE if license is not accpted yet */
-  {
-    if (xsane_display_eula(1)) /* show license and ask for accept/not accept */
-    {
-      DBG(DBG_info, "user did not accept eula, we abort\n");
-      return 1; /* User did not accept eula */
-    }
-    else /* User did accept eula */
-    {
-      xsane_pref_save();
-    }
-  }
+  xsane_pref_restore(); /* restore preferences */
 
   xsane_pref_restore_media();
 

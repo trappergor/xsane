@@ -93,9 +93,9 @@
 
 #define XSANE_VERSION		"0.999"
 #define XSANE_AUTHOR		"Oliver Rauch"
-#define XSANE_COPYRIGHT		"Oliver Rauch"
+#define XSANE_COPYRIGHT		"Oliver Rauch (modified by SUSE Linux Products GmbH)"
 #define XSANE_DATE		"1998-2013"
-#define XSANE_EMAIL_ADR		"Oliver.Rauch@xsane.org"
+#define XSANE_EMAIL_ADR		"Oliver.Rauch@xsane.org (bug reports: http://bugs.opensuse.org)"
 #define XSANE_HOMEPAGE		"http://www.xsane.org"
 #define XSANE_COPYRIGHT_TXT	XSANE_DATE " " XSANE_COPYRIGHT
 
